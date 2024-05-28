@@ -6,7 +6,7 @@ import { AppModule } from './app/app.module';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, {});
   const corsOptions: CorsOptions = {
-    origin: ['http://localhost:3000'], // Update with your frontend URL
+    origin: ['http://localhost:3000', 'https://medremind.pro'], // Update with your frontend URL
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true, // Enable credentials (cookies, authorization headers, etc.)
   };
